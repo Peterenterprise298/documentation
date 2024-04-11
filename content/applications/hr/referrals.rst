@@ -4,20 +4,21 @@ Referrals
 
 Odoo's *Referrals* application is a centralized place where all information regarding referrals is
 housed, from points earned, coworkers hired, and rewards selected. Users can recommend people they
-know for job positions, then earn referral points as those people progress through the recruitment
-pipeline. Once enough referral points are earned, they can be exchanged for prizes. The Referrals
-application integrates with the *Employees*, *Recruitment*, and *Website* applications, all of which
-must be installed in order for the *Referrals* application to function.
+know for job positions, and then earn referral points as those people progress through the
+recruitment pipeline. Once enough referral points are earned, they can be exchanged for prizes. The
+*Referrals* application integrates with the *Employees*, *Recruitment*, and *Website* applications,
+all of which must be installed in order for the *Referrals* application to function.
 
-The only configuration needed for the Referrals application after it is installed are the
-:ref:`rewards <referrals/rewards>`; everything else is pre-configured when Odoo Referrals is
+The only configurations needed for the *Referrals* application after it is installed are the
+:ref:`rewards <referrals/rewards>`; everything else is pre-configured when Odoo *Referrals* is
 installed.
 
 Any user with either :guilabel:`Referral User`, :guilabel:`Officer`, or :guilabel:`Administrator`
-rights for the Recruitment application has access to the Referrals application. Only user's with
-:guilabel:`Administrator` rights for the Recruitment application have access to the :ref:`reporting
-<referrals/reporting>` and configurations menus. For more information on users and access rights,
-refer to these documents: :doc:`../general/users` and :doc:`../general/users/access_rights`.
+access rights for the *Recruitment* application have access to the *Referrals* application. Only
+users with :guilabel:`Administrator` access rights for the *Recruitment* application have access to
+the :ref:`reporting <referrals/reporting>` and configurations menus. For more information on users
+and access rights, refer to these documents: :doc:`../general/users` and
+:doc:`../general/users/access_rights`.
 
 Onboarding
 ==========
@@ -68,32 +69,29 @@ Onboarding slides can be modified if desired. Only users with :guilabel:`Adminis
 the Recruitment application can modify onboarding slides. To edit a slide, navigate to
 :menuselection:`Referrals app --> Configuration --> Onboarding.` Each line displays the text for the
 individual onboarding slide. To edit an onboarding slide, click on an individual slide line to open
-the slide's onboarding form, then click :guilabel:`Edit`.
+the slide's onboarding form.
 
-Make any changes to the message in the :guilabel:`Text` box. To change the order the slide appear in
-the onboarding, the :guilabel:`Sequence` can be modified. Type in the corresponding number to
-indicate the order in which the slides should be displayed. A :guilabel:`Company` may be selected,
-however, if this field is populated, that slide will only be displayed for that particular company.
+Make any changes to the message in the :guilabel:`Text` field. A :guilabel:`Company` may be
+selected, however, if this field is populated, that slide is *only* displayed for that particular
+company.
 
-The image can be modified as well. Hover over the image thumbnail in the top right corner of the
+.. note::
+   The :guilabel:`Company` field only appears when in a multi-company database.
+
+The image can be modified, as well. Hover over the image thumbnail in the top-right corner of the
 form. A :guilabel:`✏️ (pencil)` icon and :guilabel:`🗑️ (garbage can)` icon appear. Click the
 :guilabel:`✏️ (pencil)` icon to change the image. A file navigator window loads. Navigate to the
 desired image, select it, then click :guilabel:`Open`. The new image appears in the thumbnail. To
 delete an image, click the :guilabel:`🗑️ (garbage can)` icon, then select a new image using the
 :guilabel:`✏️ (pencil)` icon.
 
-To save any changes, click :guilabel:`Save`, or click :guilabel:`Discard` to delete any changes and
-revert to the original content.
-
 .. image:: referrals/edit-onboarding.png
    :align: center
    :alt: An onboarding slide in edit mode, with the main fields highlighted.
 
-The order of the slides can also be changed directly in the Onboarding dashboard, without having to
-edit an individual onboarding slide. Click the up and down arrow symbol that appears after the
-checkbox and before the slide text, and drag the slide to the desired position. The
-:guilabel:`Sequence` automatically changes on all the slide's onboarding forms, reflecting the new
-sequence.
+The sequence in which the slides appear can be changed from the *Onboarding* dashboard. Click the
+:guilabel:`(six small gray boxes)` that appears after the checkbox and before the slide text, and
+drag the slide to the desired position.
 
 .. image:: referrals/onboarding-reorder.png
    :align: center
@@ -102,10 +100,10 @@ sequence.
 Share job positions
 ===================
 
-In order to earn referral points, a user must first share a job position so the applicant can apply
-for the position. There are several ways to share job positions within the Referrals application,
+In order to earn referral points, a user must first share a job position, so the applicant can apply
+for the position. Job positions can be shared in several ways within the *Referrals* application,
 through the :ref:`View Jobs <referrals/view-jobs>` button and the :ref:`Email A Friend
-<referrals/email-jobs>` button.
+<referrals/email-jobs>` button, located at the bottom of the *Referrals* app dashboard.
 
 .. _referrals/view-jobs:
 
@@ -166,10 +164,10 @@ pop-up window.
 Share a job
 -----------
 
-There are several other ways to share a job position aside from sending an email, via social media
-platforms and tracking links to the job position. At the bottom of each job position card are four
-icons and corresponding tracking links that can be used to share the job position, keeping track of
-applicants in the Referrals application.
+Other than sending an email, job positions can be shared, via social media platforms, and tracking
+links to the job position. At the bottom of each job position card are four icons, and corresponding
+tracking links, that can be used to share the job position, keeping track of applicants in the
+*Referrals* application.
 
 .. image:: referrals/share.png
    :align: center
@@ -181,217 +179,56 @@ Link
 To share the job position with a customized tracking link, click the :guilabel:`Share Now` button
 with the :guilabel:`🔗 (chain)` icon inside it. A :guilabel:`Link to Share` pop-up window appears
 with the tracking link. Click :guilabel:`Copy` to copy the link. After the link is copied, click the
-:guilabel:`Close` button to close the pop-up. Next, share the link with the prospective employee
-however desired.
+:guilabel:`Close` button to close the pop-up window. Next, share the link with the prospective
+employee however desired.
 
 Facebook
 ~~~~~~~~
 
 To share the job position using Facebook, click the :guilabel:`Share Now` button with the
-:guilabel:`f (Facebook icon)` inside it. If the user is already logged into Facebook, when the
-:guilabel:`f (Facebook icon)` is clicked, a :guilabel:`Share on Facebook` page loads in a new tab,
-with the link populated in the main body of the new post. If the user is *not* already logged in, a
-log-in screen loads instead, prompting the user to log-in to Facebook first.
+:guilabel:`f (Facebook icon)` inside it.
 
-Type in any additional information to add to the post, in the space directly below your name. If
-desired, :guilabel:`tag` users, :guilabel:`check-in` at a location, or add a :guilabel:`status` to
-the post. To tag a user, click the :guilabel:`Tag Friends` icon and select the people to tag to the
-post. To add a check-in location, click the :guilabel:`Check in` icon, and select the location from
-the pop-up of predetermined locations based on your current location. To add a :guilabel:`status`,
-click the :guilabel:`Feeling/Activity` icon, then select either the feeling or the activity type,
-and lastly, if an activity type was selected, select the specific activity.
+If the user is already logged into Facebook, when the :guilabel:`f (Facebook icon)` is clicked, a
+:guilabel:`Share on Facebook` page loads in a new tab, with the link populated in the main body of
+the new post in a pop-up window. If the user is *not* already logged in, a log-in screen loads,
+instead, prompting the user to log-in to Facebook first.
 
-There are five methods to share the job position, :guilabel:`Your Story`, :guilabel:`Share on a
-Friend's Timeline`, :guilabel:`Share in a Group`, :guilabel:`Share in an Event`, and
-:guilabel:`Share in a Private Message`. To select the sharing method, click the drop-down menu
-located at the top of the page, directly beneath the :guilabel:`Share on Facebook` banner.
-
-.. image:: referrals/facebook.png
-   :align: center
-   :alt: The view on Facebook when sharing a job description. All the various ways to share are
-         highlighted, as are all the required settings.
-
-.. tabs::
-
-   .. tab:: Share to news feed or story
-
-      The default sharing method is through the :guilabel:`News Feed`, :guilabel:`Story`, or both.
-      At the lower portion of the form are radio buttons next to the two options, :guilabel:`Feed`
-      (for the News Feed) and :guilabel:`Your Story` for stories. When :guilabel:`Share to News Feed
-      or Story` is selected, these buttons are active, if another option is selected, these radio
-      buttons are greyed out. Activate the radio button(s) to indicate how the job position should
-      be shared, either in the news feed, the story, or both.
-
-      The :guilabel:`Share to news feed or story` option allows for specific privacy settings to be
-      selected. In the lower right corner of the screen, there are two drop-down menu options, one
-      for the :guilabel:`Feed` option, the other for the :guilabel:`Your story` option. Select the
-      posting parameters from the drop-down menus. The :guilabel:`Feed` ad :guilabel:`Your story`
-      options appear different from user to user, depending on what privacy settings have been
-      created in Facebook. :guilabel:`Public` and :guilabel:`Friends` are default options, but other
-      options that the user may have configured will appear as well, such as custom groups.
-
-      When the post and/or story is ready to be shared, click the blue :guilabel:`Post to Facebook`
-      button at the bottom of the screen.
-
-   .. tab:: Share on a friend's timeline
-
-      Instead of making a public post on the user's on Facebook page, the job position can be shared
-      directly on a friend's timeline. Click the :guilabel:`Share to News Feed or Story` drop-down
-      menu near the top of the page, and select :guilabel:`Share on a Fried's Timeline`.
-
-      When selected, a :guilabel:`Friend` field appears below the selection. Begin to type in the
-      friend's name. As the name is typed, a list appears, populated with names that match what is
-      entered. Select the friend from the list. **Only** one friend can be selected.
-
-      When the post is ready to be shared, click the blue :guilabel:`Post to Facebook` button at the
-      bottom of the screen.
-
-   .. tab:: Share in a group
-
-      To reach a specific audience and not share the job position publicly with everyone, a job can
-      be shared in a group. Click the :guilabel:`Share to News Feed or Story` drop-down menu near
-      the top of the page, and select :guilabel:`Share in a Group`.
-
-      When selected, a :guilabel:`Group` field appears below the selection. The available groups
-      that can be posted to are groups the user is currently a member of. Job positions cannot be
-      shared with groups the user has not joined. Begin to type in the name of the group. As the
-      group name is typed, a list appears, populated with the group names that match what is
-      entered. Select the group from the list. Only one group can be selected.
-
-      When the post is ready to be shared, click the blue :guilabel:`Post to Facebook` button at the
-      bottom of the screen.
-
-   .. tab:: Share in an event
-
-      A job position can also be shared on an event page. Click the :guilabel:`Share to News Feed or
-      Story` drop-down menu near the top of the page, and select :guilabel:`Share in an Event`.
-
-      When selected, an :guilabel:`Event` field appears below the selection. The available events
-      that can be posted to are events the user is invited to. This includes events that the user
-      has not responded to yet, and events that have occurred in the past. Begin to type in the name
-      of the event. As the event name is typed, a list appears, populated with the events that match
-      what is entered. Select the event from the list. Only one event can be selected.
-
-      When the post is ready to be shared, click the blue :guilabel:`Post to Facebook` button at the
-      bottom of the screen.
-
-   .. tab:: Share in a private message
-
-      The last option is to share a job position privately instead of publicly, in a Facebook
-      message. Click the :guilabel:`Share to News Feed or Story` drop-down menu near the top of the
-      page, and select :guilabel:`Share in an Private Message`.
-
-      When selected, a :guilabel:`To` field appears below the selection. Begin to type in the
-      friend's name. As the name is typed, a list appears, populated with names that match what is
-      entered. Select the friend from the list. Multiple friends can be selected and added to a
-      single message. Repeat this process for each friend to be added.
-
-      When the message is ready to be sent, click the blue :guilabel:`Send message` button at the
-      bottom of the screen.
+Type in any additional information to add to the post, then share the job position using the
+available options in Facebook.
 
 X/Twitter
 ~~~~~~~~~
 
 A job position can also be shared on X/Twitter. Click the :guilabel:`Share Now` button with the bird
-icon inside it. If the user is already signed in to X/Twitter, when the :guilabel:`Share Now` icon
-is clicked, an X/Twitter page loads in a new tab with a pre-populated message ready to post, in a
-draft pop-up. If the user is *not* already signed in, a sign-in screen loads instead, prompting the
-user to sign in to X/Twitter.
+icon inside it.
+
+If the user is already signed in to X/Twitter, when the :guilabel:`Share Now` icon is clicked, an
+X/Twitter page loads in a new tab with a pre-populated message ready to post, in a draft pop-up. If
+the user is *not* already signed in, a sign-in screen loads instead, prompting the user to sign in
+to X/Twitter.
 
 The default message is:
 
 :guilabel:`Amazing job offer for (Job Position)! Check it live: (link to Job Position)`
 
-Type in any additional information or make any edits to the message. If desired, click the
-:guilabel:`X` in the top left corner of the thumbnail preview of the webpage to remove it. To adjust
-the audience for the message, click the drop-down button labeled :guilabel:`Everyone`. Select the
-preferred audience from the drop-down menu. The default option is :guilabel:`Everyone`, and the
-other options is :guilabel:`Circle`. The :guilabel:`Circle` is a group of people that the user has
-selected in X/Twitter.
-
-The default setting is :guilabel:`🌎 (globe) Everyone can reply`, an allows everyone on X/Twitter to
-reply to the message. To change this, click the :guilabel:`🌎 (globe) Everyone can reply` button in
-the lower left section of the message. There are four options presented: :guilabel:`Everyone`,
-:guilabel:`Accounts you follow`, :guilabel:`Verified accounts`, and :guilabel:`Only accounts you
-mention`. Selecting one of the other options restricts who can reply to the message.
-
-There are various other items that can be added to the message. Media (photos, videos, etc), GIF's,
-polls, emojis, and a location may all be added. Click the corresponding icon in the bottom left of
-the message and follow the prompts to add the desired additional elements.
-
-To have the message posted at a future date and time, click the :guilabel:`Schedule` icon in the
-lower left of the message window. It is the fifth icon from the left. Enter the date and time that
-the message should be posted using the date and time selector presented. Click :guilabel:`Confirm`
-to add the scheduled time to the message.
-
-To post the message, click :guilabel:`Post`. The message will be immediately posted, or, if it was
-scheduled, will be posted at the scheduled date and time.
-
-.. image:: referrals/twitter.png
-   :align: center
-   :alt: The X/Twitter pop-up when sharing a job description. All the other items than can be added
-         to the message are highlighted, as is the visibility setting and the post button.
+Type in any additional information or make any edits to the message, then share using the available
+options in X/Twitter.
 
 LinkedIn
 ~~~~~~~~
 
 To share a job position on LinkedIn, click the :guilabel:`Share Now` button with the :guilabel:`in
-(LinkedIn logo)` inside it. If the user is already logged into LinkedIn, when the :guilabel:`Share
-Now` button is clicked, a new tab loads in LinkedIn, with a link to the job position at the top. If
-the user is *not* already logged in, a log-in screen loads instead, prompting the user to log-in to
-LinkedIn first.
+(LinkedIn logo)` inside it.
+
+If the user is already logged into LinkedIn, when the :guilabel:`Share Now` button is clicked, a new
+tab loads in LinkedIn, with a link to the job position at the top. If the user is *not* already
+logged in, a log-in screen loads instead, prompting the user to log-in to LinkedIn first.
 
 The job position can be shared either in a public post, or in a private message to an individual or
 group of individuals.
 
-Share in a post
-***************
-
-To share the job position in a public post, click the :guilabel:`✏️ (pencil) Share in a post` button
-in the lower-left corner of the screen. A :guilabel:`Create a post` window loads, with the job
-position link populated. Enter any other information to the post in the field.
-
-To change the audience that will see the post, click the :guilabel:`🌎 (globe) Anyone` drop-down,
-located directly beneath the account name. Click on the desired selection, then click the
-:guilabel:`Save` button on the far right side of the screen, beneath the last listed option.
-
-:guilabel:`Anyone` allows anyone on LinkedIn to see the post. :guilabel:`Connections only` will
-only share the post with people who are connected with the user, and will be hidden from everyone
-else. :guilabel:`Group` shares the post with a specific group the user is a member of. The post can
-only be shared with one group; posting to multiple groups at once is not available. If
-:guilabel:`Group` is selected, a page loads with a list of all the groups the user is currently a
-member of. Click on a group to select it, then click the :guilabel:`Save` button in the lower right
-corner.
-
-Next, select who can comment on the post. To change this setting, click on the :guilabel:`💬 (speech
-bubble) Anyone` button located beneath the body of the post. A page loads with the various options.
-Click on one of the three options to select it. The three options are :guilabel:`Anyone`,
-:guilabel:`Connections only`, and :guilabel:`No one`. The default option is :guilabel:`Anyone`,
-which allows anyone with a LinkedIn account to comment on the post. :guilabel:`Connections only`
-will only allow people who are connected with the user to comment on the post. :guilabel:`No one`
-turns off commenting. After making a selection, click the :guilabel:`Save` button in the far lower
-right corner.
-
-Finally, once the post is edited and the settings have been selected, click :guilabel:`Post` to
-share the job position.
-
-.. image:: referrals/linkedin.png
-   :align: center
-   :alt: A linkedIn post to share a job. The job position is highlighted as is the post button.
-
-Send as private message
-***********************
-
-Instead of making a public post, the post can be sent to a connection in a private message. To do
-so, click the :guilabel:`Send as private message` button in the lower left corner. A message window
-loads with the link to the job description in the bottom of the window. First, select the
-recipient(s) for the message. Type the name in the :guilabel:`Search for message recipients` field.
-As the name is typed in, any matching connections appear. Click on a connection to add them. Repeat
-this for all the recipients to send the message to. There is no limit on the number of connections
-that can be messaged. Next, enter any additional text in the message body. Click :guilabel:`Send` in
-the lower right corner to send the message. A :guilabel:`Message successfully sent!` screen loads.
-Two options are presented, :guilabel:`View Message` and :guilabel:`Continue to LinkedIn`. Click on
-the desired selection to navigate to that choice, or close the browser tab to exit.
+Type in any additional information or make any edits to the message or post, then share using the
+available options in LinkedIn.
 
 .. _referrals/email-jobs:
 
@@ -403,7 +240,7 @@ instead of one job position at a time. To do this, navigate to the main *Referra
 Click the :guilabel:`Email a friend` button at the bottom of the screen. A :guilabel:`Send Job Offer
 by Mail` pop-up window appears.
 
-Enter the email address(es) in the :guilabel:`Email` line. The email can be sent to multiple
+Enter the email address in the :guilabel:`Email` line. The email can be sent to multiple
 recipients, simply enter a comma followed by a single space after each email address. The
 :guilabel:`Subject` is pre-configured with `Job for you`, but can be edited.
 
@@ -411,14 +248,14 @@ The email body is also populated with pre-configured text. The text that appears
 
 `Hello,`
 
-`There are some amazing job offers in my company! Have a look, they can be interesting for you`
+`There are some amazing job offers in my company! Have a look, they can be interesting for you\:`
 
-`See Job Offers`
+`(Company)/Job Offers`
 
-The `See Job Offers` text is a tracking link to a complete list of all job positions currently being
-recruited for, that are live on the company's website (published). Add any additional text and/or
-make any edits to the message body, then click :guilabel:`Send Mail` to send the email. The message
-will be sent and the window will close.
+The `(Company)/Job Offers` text is a tracking link to a complete list of all job positions currently
+being recruited for, that are live on the company's website (published). Add any additional text
+and make any edits to the message body, if necessary. Then, click :guilabel:`Send Mail` to send the
+email. This sends the message and closes the window.
 
 .. _referrals/hired:
 
@@ -433,7 +270,7 @@ dashboard, a hired page loads. The text :guilabel:`(Referral Name) has been hire
 for your new friend!` appears.
 
 Below this message are five avatar thumbnails to choose from. If an avatar has already been assigned
-to a referral, the thumbnail is greyed out, and the name the avatar has been chosen for appears
+to a referral, the thumbnail is grayed out, and the name the avatar has been chosen for appears
 beneath the avatar. Click on an available avatar to select it.
 
 If more than one referral was hired since opening the Referrals application, after selecting the
@@ -471,8 +308,10 @@ modified. Hover over the image being replaced to reveal a :guilabel:`✏️ (pen
 :guilabel:`🗑️ (garbage can)` icon. Click the :guilabel:`✏️ (pencil)` icon and a file explorer
 window appears. Navigate to the desired image file then click :guilabel:`Open` to select it.
 
-Once all changes have been made, click the :guilabel:`Save` button to save the changes, or click the
-:guilabel:`Discard` button to revert to the original information.
+The referral friend form automatically saves but can be saved manually at any time by clicking the
+*save manually* option, represented by a :guilabel:`(cloud upload)` icon, located in the top-left
+corner. To cancel any changes made, click the :guilabel:`✖️ (Discard all changes)` icon to delete
+any changes and revert to the original content.
 
 .. image:: referrals/edit-friend.png
    :align: center
@@ -516,12 +355,18 @@ To see all the referrals (both ongoing and successful) click the :guilabel:`Refe
 :guilabel:`My Referral` window loads. This screen displays all the referrals, with each referral in
 its own referral card.
 
-A successful referral has a green line down the left side of the card, and displays a
-:guilabel:`✓ Hired` image in the top right corner of the card. Referrals that are in process display
-an :guilabel:`In Progress` image in the top right corner.
+A successful referral displays a green :guilabel:`Hired` banner in the top-right corner of the card.
+Referrals that are in process display a purple :guilabel:`In Progress` banner in the top-right
+corner.
 
-Each referral card lists the name of the applicant, the department the job position is in, the name
-of the job position, the person responsible for filling the role (recruiter), and the points earned.
+Each referral card lists the name of the applicant, the subject/application title as it appears on
+the applicant card in the *Recruitment* app, the name of the job position, the person responsible
+for filling the role (recruiter), and the points earned. For referrals that have been hired, the
+selected avatar also appears on the card.
+
+.. image:: referrals/referrals.png
+   :align: center
+   :alt: Two referral cards, one hired and one in-progress.
 
 Points
 ~~~~~~
@@ -548,7 +393,7 @@ check mark appears next to the stage.
    - :guilabel:`Contract Signed`: 50 points
 
    The total points earned for a referral that is hired is 85 points. Modifications of the points
-   earned for each stage is done in the Recruitment application. Refer to the
+   earned for each stage are done in the Recruitment application. Refer to the
    :ref:`Recruitment <recruitment/modify-stages>` documentation to modify the points for each stage.
 
 .. _referrals/rewards:
@@ -562,13 +407,13 @@ Create rewards
 The rewards are the only configurations needed when setting up the Referrals application. Only users
 with :guilabel:`Administrator` rights for the Recruitment application can create or modify rewards.
 To add rewards, navigate to :menuselection:`Referrals app --> Configuration --> Rewards`. Click
-:guilabel:`Create` and a reward form loads. Enter the following information on the form:
+:guilabel:`New` and a reward form loads. Enter the following information on the form:
 
 - :guilabel:`Product Name`: Enter the name as it should appear for the reward.
 - :guilabel:`Cost`: Enter the amount of points required to redeem the reward.
 - :guilabel:`Company`: Using the drop-down menu, select the company the reward will appear for. If a
   reward is to be used for several companies, each company needs to have a record of the reward,
-  with the company listed on the form.
+  with the company listed on the form. This field only appears if in a multi-company environment.
 - :guilabel:`Gift Responsible`: Select the person who will be responsible for procuring and
   delivering the reward to the recipient, using the drop-down menu. This person is alerted when the
   reward is purchased, so they know when to deliver the reward to the recipient.
@@ -579,7 +424,7 @@ To add rewards, navigate to :menuselection:`Referrals app --> Configuration --> 
   Click the :guilabel:`✏️ (pencil)` icon and a file explorer appears. Navigate to the photo file,
   then click :guilabel:`Open` to select it.
 
-The only required fields are the :guilabel:`Product Name`, :guilabel:`Company`, and
+The only required fields are the :guilabel:`Product Name`, :guilabel:`Company` (if applicable), and
 :guilabel:`Description`.
 
 .. image:: referrals/rewards.png
@@ -596,14 +441,15 @@ Redeem rewards
 
 To redeem points for a reward, click the :guilabel:`Rewards` button on the main Referrals dashboard.
 All the configured rewards are listed in individual reward cards. The points required to purchase
-the reward is listed in the top right corner of the card. If the user has enough points to purchase
+the reward is listed in the top-right corner of the card. If the user has enough points to purchase
 a reward, a :guilabel:`🧺 (basket) Buy` button appears at the bottom of the reward card. If they do
 not have enough points for a reward, the reward card displays :guilabel:`You need another (x) points
 to buy this` instead of a buy button.
 
-Click the :guilabel:`🧺 (basket) Buy` button on a reward to purchase it. A confirmation pop-up
-appears, asking if the user is sure they want to purchase the reward. Click :guilabel:`OK` to
-purchase the item, or :guilabel:`Cancel` to close the window and cancel the purchase.
+Click the :guilabel:`🧺 (basket) Buy` button on a reward to purchase it. A :guilabel:`Confirmation`
+pop-up window appears, asking if the user is sure they want to purchase the reward. Click
+:guilabel:`OK` to purchase the item, or :guilabel:`Cancel` to close the window and cancel the
+purchase.
 
 After :guilabel:`OK` is clicked, the pop-up window closes, and the points used to purchase the
 reward are subtracted from the user's available points. The rewards presented are now updated to
@@ -643,7 +489,7 @@ Odoo superheroes, and each level adds an additional element to their avatar, suc
 shields.
 
 To modify a level's image, name, or points required to reach the level, click on an individual level
-in the list to open the level form. Click :guilabel:`Edit` to make modifications.
+in the list to open the level form, then make modifications.
 
 Type in the name or number of the level in the :guilabel:`Level Name` field. What is entered is
 displayed beneath the user's photo on the main dashboard when they reach that level. Enter the
@@ -656,8 +502,10 @@ If desired, the :guilabel:`Image` can also be modified. Hover over the image to 
 (pencil)` icon and a file explorer window appears. Navigate to the desired image file then click
 :guilabel:`Open` to select it.
 
-Once all changes have been made, click the :guilabel:`Save` button to save the changes, or click the
-:guilabel:`Discard` button to revert to the original information.
+The level form saves automatically but can be saved manually at any time by clicking the *save
+manually* option, represented by a :guilabel:`(cloud upload)` icon, located in the top-left corner.
+To cancel any changes made, click the :guilabel:`✖️ (Discard all changes)` icon to delete any
+changes and revert to the original content.
 
 .. image:: referrals/levels.png
    :align: center
@@ -730,7 +578,7 @@ Click :guilabel:`Create` and a blank alert form loads. Enter the following infor
   the alert should be displayed for, select the company from the drop-down menu. If this field
   remains blank, the alert is visible to everyone with access to the Referrals application. If a
   company is specified, only user's within that company (who also have access to the Referrals
-  application) will see the alert.
+  application) will see the alert. This field only appears when in a multi-company database.
 - :guilabel:`Alert`: Enter the text for the alert. This message appears inside the alert banner on
   the main dashboard.
 - :guilabel:`On Click`: There are three options for the alert. Click the radio button next to the
@@ -775,4 +623,4 @@ spreadsheet from the drop-down menu, or select :guilabel:`New Spreadsheet`. Clic
 
 .. note::
    The spreadsheet is stored in the *Documents* application. This application needs to be installed
-   in order to use the :guilabel:`Insert in Spreadsheet` option.
+   to use the :guilabel:`Insert in Spreadsheet` option.
