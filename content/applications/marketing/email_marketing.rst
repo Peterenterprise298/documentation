@@ -31,6 +31,11 @@ detailed reporting metrics to track the campaigns' overall effectiveness.
 
       Target lost leads with Email Marketing.
 
+   .. card:: Analyze Metrics
+      :target: email_marketing/analyze_metrics
+
+      Analyzing campaign metrics.
+
 Email marketing dashboard
 =========================
 
@@ -822,6 +827,7 @@ entire campaign, click :guilabel:`Discard`.
    - :doc:`email_marketing/mailing_lists`
    - :doc:`email_marketing/unsubscriptions`
    - :doc:`email_marketing/lost_leads_email`
+   - :doc:`email_marketing/analyze_metrics`
 
 .. toctree::
    :titlesonly:
@@ -829,3 +835,4 @@ entire campaign, click :guilabel:`Discard`.
    email_marketing/mailing_lists
    email_marketing/unsubscriptions
    email_marketing/lost_leads_email
+   email_marketing/analyze_metrics
