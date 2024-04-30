@@ -2,8 +2,6 @@
 Inventory valuation configuration
 =================================
 
-.. _inventory/inventory_valuation_config:
-
 All of a company's stock on-hand contributes to the valuation of its inventory. That value should
 be reflected in the company's accounting records to accurately show the value of the company and
 all of its assets.
@@ -42,12 +40,12 @@ Accounting entries will depend on the accounting mode: *Continental* or *Anglo-S
 
 In *Anglo-Saxon* accounting, the costs of goods sold (COGS) are reported when products are sold or
 delivered. This means that the cost of a good is only recorded as an expense when a customer is
-invoiced for a product. *Interim Stock Accounts* are used for the input and output accounts, and are
-both *Asset Accounts* in the balance sheet.
+invoiced for a product. So, set the *Stock Input* and *Stock Output* accounts to a *Current Assets*
+type of account, and set the *Expense* account to *Cost of Revenue*.
 
 In *Continental* accounting, the cost of a good is reported as soon as a product is received into
-stock. Additionally, a single *Expense* account is used for both input and output accounts in
-the balance sheet.
+stock. The *Stock Input* and *Stock Output* accounts should be set to a *Current Assets* type of
+account. Set the *Expense Account* to *Expenses*.
 
 .. _inventory/inventory_valuation_config/costing_methods:
 
@@ -90,7 +88,7 @@ menu (e.g. :guilabel:`Standard`, :guilabel:`Average Cost (AVCO)`, or :guilabel:`
 (FIFO)`) and switch the :guilabel:`Inventory Valuation` to :guilabel:`Automated`.
 
 .. seealso::
-   :ref:`Using the inventory valuation<inventory/reporting/using_inventory_val>`
+   :doc:`using_inventory_valuation`
 
 .. note::
    When choosing :guilabel:`Average Cost (AVCO)` as the :guilabel:`Costing Method`, changing the
