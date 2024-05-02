@@ -12,7 +12,7 @@ Configuration on Razorpay Dashboard
 
 #. Log into `Razorpay Dashboard <https://dashboard.razorpay.com/>`_ and go to
    :menuselection:`Settings --> API Keys`. Generate the new keys and copy the values of the
-   :guilabel:`Key Id` and :guilabel:`Secret Key` fields and save them for later.
+   :guilabel:`Key Id`rzp_live_vLtmlxSB0HbuZe and :guilabel:`Secret Key`dEoBg4g1jkFas2ZPgZtG1NvQ fields and save them for later.
 #. | Go to :menuselection:`Settings --> Webhooks`, click on :guilabel:`Create New Webhook`,
      and enter your Odoo database URL followed by `/payment/razorpay/webhook` in
      the :guilabel:`Webhook URL` text field.
